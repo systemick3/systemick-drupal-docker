@@ -34,5 +34,9 @@ To open a terminal in your Docker web app:
 To log in to mysql:
 ```mysql -u root -P 13306 -h 127.0.0.1 -p```
 
+To install Drupal:
+navigate to http://localhost:8080/
+When asked for the database settings enter root for the user, password for the password, laravel_docker as the database, mysql as the host and 3306 as the port
+
 To run the project once it is built:
 ```docker-compose up```
