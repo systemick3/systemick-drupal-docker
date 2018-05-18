@@ -1,4 +1,4 @@
-# Drupal projects for Ecorys
+# Drupal projects for Systemick
 
 ## Usage
 
@@ -23,6 +23,7 @@ cd to working directory eg /home/projects or /var/www/html
 
 ```rm -Rf systemick-drupal-docker```
 
+To build the project (Takes around 10 mins the first time)
 ```docker-compose up --build```
 
 To exit the terminal press Ctrl-C (this will bring down your dev site)
@@ -32,3 +33,6 @@ To open a terminal in your Docker web app:
 
 To log in to mysql:
 ```mysql -u root -P 13306 -h 127.0.0.1 -p```
+
+To run the project once it is built:
+```docker-compose up```
