@@ -29,6 +29,8 @@ services:
       MYSQL_USER: app
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./mysql_data:/var/lib/mysql
   redis:
     image: redis:4.0-alpine
     ports:
