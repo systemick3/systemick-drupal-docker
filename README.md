@@ -26,17 +26,18 @@ cd to working directory eg /home/projects or /var/www/html
 To build the project (Takes around 10 mins the first time)
 ```docker-compose up --build```
 
-To exit the terminal press Ctrl-C (this will bring down your dev site)
+To exit the terminal press Ctrl-C (this will bring down your dev site) - running ```docker build -d``` will run Docker as abackground process freeing up your terminal for other commands.
 
-To open a terminal in your Docker web app:
+To run the project once it is built:
+```docker-compose up```
+
+There are 3 Docker instances running: one for the web app, one for mysql and one for redis
+To log into the app instance
 ```docker-compose exec app /bin/bash```
 
-To log in to mysql:
+To open a mysql client on the mysql instance
 ```mysql -u root -P 13306 -h 127.0.0.1 -p```
 
 To install Drupal:
 navigate to http://localhost:8080/
 When asked for the database settings enter root for the user, password for the password, laravel_docker as the database, mysql as the host and 3306 as the port
-
-To run the project once it is built:
-```docker-compose up```
