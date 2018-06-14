@@ -52,3 +52,5 @@ To install Drupal:
 navigate to http://localhost:8080/
 When asked for the database settings enter app for the user, letmein for the password, drupal as the database, mysql as the host and 3306 as the port.
 You can change the above settings by editing docker-compose.yml before your inital build.
+
+Use your favourite editor on your host machine to edit the Drupal code.
