@@ -10,7 +10,7 @@ Then you need to [install composer](https://getcomposer.org/doc/00-intro.md#inst
 
 Finally [install the latest version of drush](http://docs.drush.org/en/master/install/).
 
-You don't have to install Drupal using composer but the community is moving to that method (Drush 9 requires a site to be built with composer) so it might be an idea to give it a try
+You don't have to install Drupal using composer but the community is moving to that method (Drush 9 requires a site to be built with composer) so it might be an idea to give it a try.
 
 cd to working directory eg /home/projects or /var/www/html
 
@@ -36,9 +36,10 @@ To exit the terminal press Ctrl-C (this will bring down your dev site) - running
 
 To run the project once it is built:
 ```docker-compose up -d``` this will run Docker as a background process freeing up your terminal for other commands. 
-It is sometimes useful to omit the -d option as this outputs the apache log in the terminal
+It is sometimes useful to omit the -d option as this outputs the apache log in the terminal.
 
-There are 3 Docker instances running: one for the web app, one for mysql and one for redis
+There are 3 Docker instances running: one for the web app, one for mysql and one for redis. You can see them by running the command ```docker ps```.
+
 To log into the app instance
 ```docker-compose exec app /bin/bash```
 This is the equivalent of ssh-ing into your docker instance.
