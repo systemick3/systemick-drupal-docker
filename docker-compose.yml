@@ -9,7 +9,7 @@ services:
       - 8080:80
     volumes:
       - .:/srv/app
-      - /Users/mike/.composer:/root/.composer
+      - /Users/mike/.composer/vendor/bin/drush:/usr/local/bin/drush
     links:
       - mysql
       - redis
